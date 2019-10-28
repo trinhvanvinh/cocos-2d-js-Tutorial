@@ -55,10 +55,21 @@ var HelloWorldLayer = cc.Layer.extend({
         // });
         // this.addChild(this.sprite, 0);
 
-        var sprite = new cc.Sprite(res.HelloWorld_png);
+        var sprite = new cc.Sprite.create(res.HelloWorld_png);
         this.addChild(sprite);
         sprite.setAnchorPoint(0.5,0.5);
         sprite.setPosition(cc.p(size.width/2, size.height/2));
+
+        // move to
+        // var sprite_act = cc.MoveTo.create(2,cc.p(200,200));
+        // sprite.runAction(sprite_act);
+        // move by
+        // var sprite_mvby= cc.MoveBy.create(2, cc.p(50,200));
+        // sprite.runAction(sprite_mvby);
+        //  jumpto
+        // seeing tut 14
+
+
 
 
         return true;
